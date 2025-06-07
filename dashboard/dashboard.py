@@ -47,12 +47,6 @@ elif page == "Statistik Deskriptif":
     st.title("Statistik Deskriptif")
     st.write(data.describe(include='all'))
 
-    st.markdown("### Korelasi Numerik")
-    num_data = data.select_dtypes(include=['int64', 'float64'])
-    fig, ax = plt.subplots()
-    sns.heatmap(num_data.corr(), annot=True, cmap="coolwarm", ax=ax)
-    st.pyplot(fig)
-
 # Halaman: Inference
 elif page == "Inference":
     st.title("Prediksi Dropout Mahasiswa")
