@@ -45,7 +45,7 @@ elif page == "Visualisasi":
 # Halaman: Statistik Deskriptif
 elif page == "Statistik Deskriptif":
     st.title("Statistik Deskriptif")
-    st.write(data.describe(include='all'))
+    st.write(data.describe())
 
 # Halaman: Inference
 elif page == "Inference":
