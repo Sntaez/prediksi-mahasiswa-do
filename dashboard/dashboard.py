@@ -84,5 +84,5 @@ elif page == "Inference":
         df_input['status_beasiswa'] = df_input['status_beasiswa'].map({'Ya': 1, 'Tidak': 0})
         
         pred = model.predict(df_input)[0]
-        result = "BERPOTENSI DROPOUT" if pred == 1 else "TIDAK BERDROPOUT"
+        result = "BERPOTENSI DROPOUT" if pred == 1 else "TIDAK BERPOTENSI DROPOUT"
         st.success(f"Hasil Prediksi: {result}")
