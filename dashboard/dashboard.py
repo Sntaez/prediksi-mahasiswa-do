@@ -70,7 +70,7 @@ elif page == "Inference":
 
     # Load model
     if st.button("Prediksi Dropout"):
-        model = joblib.load("model.pkl")  # Pastikan model Anda telah disimpan sebagai 'model.pkl'
+        model = joblib.load("model.pkl")  
         
         # Preprocess input
         df_input = pd.DataFrame([input_data])
